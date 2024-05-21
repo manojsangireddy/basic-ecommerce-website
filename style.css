@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  padding: 20px 14%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-bar-container {
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-bar-icons {
+  display: flex;
+  gap: 24px;
+  font-size: 24px;
+}
+
+.nav-bar-container > div:hover,
+.nav-bar-icons > div:hover {
+  cursor: pointer;
+  color: #c8815f;
+}
+
+section {
+  padding: 100px 14%;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background: url(./image/background.jpg);
+  background-size: cover;
+  background-position: center top;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+.home-text > h1 {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 6px;
+  margin-bottom: 16px;
+}
+
+.home-text span {
+  font-size: 60px;
+}
+
+.home-text p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 48px;
+  letter-spacing: 3px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 25px;
+  color: white;
+  background-color: #c8815f;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+.center-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.center-text > h2 {
+  font-size: 32px;
+}
+
+.featured-content {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.featured-text > h5 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.featured-text > p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.row:hover {
+  cursor: pointer;
+}
+
+.cta {
+  height: 60vh;
+  width: 100%;
+  background: url(./image/cta.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.cta-text h6 {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 9px;
+  margin-bottom: 14px;
+}
+
+.cta-text h4 {
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 9px;
+  margin-bottom: 30px;
+}
+
+.new-arrivals {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.rowcontainer {
+  width: auto;
+  height: 450px;
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.fetchedImage {
+  width: auto;
+  height: 265px;
+}
+
+.rowcontainer .name {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.rowcontainer .price {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.price::before {
+  content: "$";
+}
+
+.rowcontainer:hover {
+  cursor: pointer;
+}
+
+footer {
+  height: 260px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-evenly;
+}
+
+.main-contact {
+  margin-top: 40px;
+}
+
+.main-contact h3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.main-contact h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 32px;
+}
+
+.social-icons i {
+  font-size: 25px;
+  color: #555;
+  margin-right: 16px;
+}
+
+.social-icons i:hover {
+  color: #ffffff;
+}
+
+.main-contact div,
+.main-contact div a {
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
